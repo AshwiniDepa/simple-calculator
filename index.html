@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+	    <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Calculator</title>
+	</head>
+	<body>
+	    <form action="#" onsubmit="javascript:calculator(); return false;">
+	        <input type="text" class="input-key" id="parameter1" name="parameter1" onchange="javascript:calculator();" onkeyup="javascript:calculator();" value=""/>
+			<input type="text" class="input-key" id="parameter2" name="parameter2" onchange="javascript:calculator();" onkeyup="javascript:calculator();" value=""/>
+		    <select name="operator" id="operator" onchange="javascript:calculator();">
+		        <option value="addition">Addition</option>
+				<option value="substraction">Substracion</option>
+				<option value="multiplication">Multiplication</option>
+				<option value="division">Division</option>
+			</select>
+			<input type="submit" class="input-button" value="Result"/>
+			<input type="result" id="result" readonly="readonly" value=""/>
+		</form>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
